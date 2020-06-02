@@ -35,33 +35,6 @@
 
 }
 
-@font-face {
-
-  font-family: FontAwesomeLight;
-  src: url("./fonts/Font Awesome 5 Pro-Light-300.otf");
-
-}
-
-@font-face {
-
-  font-family: FontAwesomeRegular;
-  src: url("./fonts/Font Awesome 5 Pro-Regular-400.otf");
-
-}
-
-@font-face {
-
-  font-family: FontAwesomeSolid;
-  src: url("./fonts/Font Awesome 5 Pro-Solid-900.otf");
-
-}
-
-@font-face {
-
-  font-family: FontAwesomeBrand;
-  src: url("./Fonts/Font Awesome 5 Brands-Regular-400.otf");
-
-}
 
 @font-face {
 
@@ -126,26 +99,6 @@ a:hover {
 	font-family: LouisGeorgeCafeBold;
 }
 
-.icon-light {
-
-	font-family: FontAwesomeLight;
-}
-
-.icon-regular {
-
-	font-family: FontAwesomeRegular;
-}
-
-
-.icon-solid {
-
-	font-family: FontAwesomeSolid;
-}
-
-.icon-brand {
-
-	font-family: FontAwesomeBrand;
-}
 
 .loading-screen {
 
@@ -255,6 +208,7 @@ a:hover {
 .footer-container .footer .social-icons a:hover {
 
 	color: var(--main-color);
+	text-decoration: none;
 
 }
 

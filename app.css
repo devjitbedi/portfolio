@@ -1,0 +1,808 @@
+
+/* Variables */
+
+:root {
+
+  --main-bg-color: #111111;
+  --accent-bg-color: #333333;
+  --main-txt-color: #FEFEFE;
+  --main-color: #e9ff70;
+  --accent-txt-color: #8d99ae;
+
+}
+
+
+/* Inputting Fonts */
+
+@font-face {
+
+  font-family: LouisGeorgeCafe;
+  src: url("./fonts/Louis George Cafe.ttf");
+
+}
+
+@font-face {
+
+  font-family: LouisGeorgeCafeBold;
+  src: url("./fonts/Louis George Cafe Bold.ttf");
+
+}
+
+@font-face {
+
+  font-family: LouisGeorgeCafeLight;
+  src: url("./fonts/Louis George Cafe Light.ttf");
+
+}
+
+@font-face {
+
+  font-family: FontAwesomeLight;
+  src: url("./fonts/Font Awesome 5 Pro-Light-300.otf");
+
+}
+
+@font-face {
+
+  font-family: FontAwesomeRegular;
+  src: url("./fonts/Font Awesome 5 Pro-Regular-400.otf");
+
+}
+
+@font-face {
+
+  font-family: FontAwesomeSolid;
+  src: url("./fonts/Font Awesome 5 Pro-Solid-900.otf");
+
+}
+
+@font-face {
+
+  font-family: FontAwesomeBrand;
+  src: url("./Fonts/Font Awesome 5 Brands-Regular-400.otf");
+
+}
+
+@font-face {
+
+  font-family: YoungSerif;
+  src: url("./Fonts/YoungSerif.otf");
+
+}
+
+
+/* General CSS */
+
+body {
+
+	font-family: LouisGeorgeCafe;
+	color: var(--main-txt-color);
+	background-color: var(--main-bg-color);
+}
+
+
+h1, h2, h3, h4, h5 {
+
+	font-family: LouisGeorgeCafeBold;
+	line-height: 1.5em;
+
+}
+
+h1 {
+
+	font-size: 3.6rem;
+}
+
+h4 {
+
+	font-size: 1.8rem;
+}
+
+h5 {
+
+	font-size: 1.4rem;
+}
+
+p {
+
+	font-size: 1.2rem;
+	position: relative;
+}
+
+a:hover {
+
+	color: var(--main-color);
+}
+
+::selection {
+
+  background: var(--main-color);
+  opacity: 1;
+}
+
+
+.bold {
+
+	font-family: LouisGeorgeCafeBold;
+}
+
+.icon-light {
+
+	font-family: FontAwesomeLight;
+}
+
+.icon-regular {
+
+	font-family: FontAwesomeRegular;
+}
+
+
+.icon-solid {
+
+	font-family: FontAwesomeSolid;
+}
+
+.icon-brand {
+
+	font-family: FontAwesomeBrand;
+}
+
+.loading-screen {
+
+	background-color: var(--main-color);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	text-align: center;
+	padding-top: 25vh;
+	color: var(--main-bg-color);
+
+}
+
+.loading-screen h1 {
+
+	font-size: calc(3rem + 8vw);
+	
+	
+}
+
+.loading-screen span {
+
+	position: relative;
+	display: inline-block;
+	
+	
+}
+
+
+
+/* Header/Footer CSS */
+
+.header-container .header {
+
+	padding: 5em 15px;
+	position: relative;
+
+}
+
+.header-container .header .site-title {
+
+	display: inline-block;
+	border-right: 2px solid var(--main-txt-color);
+	padding-right: 0.75em;
+	line-height: 1em;
+	position: relative;
+	z-index: 6;
+
+}
+
+.header-container .header img {
+
+	height: 2.75em;
+	position: relative;
+	bottom: 0.35em;
+
+}
+
+.header-container .header .page-title {
+
+	display: inline-block;
+	padding-left: 0.75em;
+	bottom: 0.075em;
+	font-family: LouisGeorgeCafeBold;
+
+}
+
+.header-container .header .action {
+
+	float: right;
+	cursor: pointer;	
+	position: relative;
+	font-size: 1.2rem;
+	transition: 0.2s;
+	color: var(--main-txt-color);
+
+}
+
+.header-container .header .action:hover, .menu-container .close-menu:hover {
+
+	color: var(--main-color);
+
+}
+
+.footer-container .footer {
+
+	padding: 1em 15px;
+	position: relative;
+
+}
+
+.footer-container .footer .social-icons {
+
+	display: inline-block;
+
+}
+
+.footer-container .footer .social-icons span {
+
+	
+
+}
+
+.footer-container .footer .social-icons a:hover {
+
+	color: var(--main-color);
+
+}
+
+.footer-container .footer .footer-text {
+
+	float: right;
+	color: var(--accent-txt-color);
+	display: inline-block;
+
+}
+
+.no-opacity {
+
+	opacity: 0;
+}
+
+.rotate {
+
+	animation: rotate 1.5s;
+	animation-timing-function: cubic-bezier(0, .428, .046, .989);
+	animation-delay: 0.75s;
+}
+
+.fade-in {
+
+	animation: fade-in 1.5s;
+	
+}
+
+.slide-in {
+
+	transform: translateX(-20px);
+	animation: slide-in 0.8s ease forwards;
+}
+
+/*.slide-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}*/
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+.already-visible {
+  transform: translateY(0);
+  transform: translateX(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+@keyframes slide-in {
+  to { transform: translateX(0);}
+}
+
+@keyframes fade-in {
+
+	0% {opacity: 0; transform: translateY(50px);}
+	100% {opacity:1; transform: translateY(0px);}
+
+}
+
+@keyframes rotate {
+
+	100% {-webkit-transform: rotate(-25deg) translateX(-0.05em) translateY(-0.01em); }
+
+}
+
+
+
+/* Menu CSS */
+
+
+.menu-container {
+
+	background-color: var(--main-txt-color);
+	position: fixed;
+	width: 0;
+	height: 100vh;
+	right: 0;
+	z-index: 5;
+	color: var(--main-bg-color);
+	display: none;
+
+}
+
+.menu-container .close-menu {
+
+	float: right;
+	padding: 2em 1.5em;
+	display: none;
+	cursor: pointer;
+	position: relative;
+	bottom: 0.25em;
+
+}
+
+.navbar {
+
+	padding-top: 8em;
+
+}
+
+.navbar .nav-item {
+
+	line-height: 2em;
+	color: var(--accent-txt-color);
+	transition: 0.2s;
+
+}
+
+.navbar .nav-item:hover {
+
+	color: var(--main-bg-color);
+
+
+
+}
+
+.navbar .active {
+
+	color: var(--main-bg-color);
+
+}
+
+.navbar .active > span {
+
+	color: var(--main-color);
+
+}
+
+.navbar .nav-item span {
+
+	padding-right: 0.5em;
+	position: relative;
+	bottom: 0.05em;
+
+}
+
+
+/* Home Page CSS */
+
+.main .title h1 {
+
+	font-size: 5.5rem;
+	line-height: 1.2em;
+	display: inline-block;
+
+}
+
+.main .title .image-circle {
+
+	background-color: var(--main-txt-color);
+	border-radius: 50%;
+	transition: 0.2s;
+	height: 5.5rem;
+	width: 5.5rem;
+	top: 0.15em;
+	position: relative;
+	display: inline-block;
+	background-position: center;
+	background-size: cover;
+	
+
+}
+
+.main .title .image-circle:hover {
+
+	transform: scale(1.15);
+	
+}
+
+
+.main .content {
+
+	margin: 5em 0em;
+}
+
+.main .content .content-title {
+
+	padding-bottom: 1em;
+
+}
+
+.main .content .cards a {
+
+	text-decoration: none;
+	color: var(--main-txt-color);
+
+}
+
+.main .content .cards a:hover {
+
+	color: var(--main-color);
+
+}
+
+.main .content .cards .card {
+
+	border: none;
+	background-color: var(--main-bg-color);
+
+}
+
+.main .content .cards .card-main-container, .main .content .cards .card-minor-container {
+
+	padding: 0;
+
+}
+
+.main .content .cards .card-image-container {
+
+	overflow: hidden;
+	transition: 0.2s;
+
+
+}
+
+.main .content .cards .card-main .card-image {
+
+	padding: 10em 0em;
+
+}
+
+.main .content .cards .card-minor .card-image {
+
+	padding: 4em 0em;
+
+}
+
+.main .content .cards .card-main-1 .card-image {
+
+	background: url("./imgs/SAP_Background.jpg");
+
+}
+.main .content .cards .card-main-2 .card-image {
+
+	background: url("./imgs/SpaceX_Background.jpg");
+
+}
+
+.main .content .cards .card-minor-1 .card-image {
+
+	background: url("./imgs/BrokeUnicorns_Background.jpg");
+
+}
+
+.main .content .cards .card-minor-2 .card-image {
+
+	background: url("./imgs/Grid_Background.jpg");
+
+}
+
+.main .content .cards .card-minor-3 .card-image {
+
+	background: url("./imgs/KPS_Background.jpg");
+
+}
+
+.main .content .cards .card-minor-4 .card-image {
+
+	background: url("./imgs/Expect_Background.jpg");
+
+}
+
+.main .content .cards .card .card-image {
+
+	background-color: var(--main-txt-color);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	transition: 0.2s;
+
+}
+
+.main .content .cards .card .card-image img {
+
+	height: 4em;
+	position: relative;
+	z-index: 3;
+	transition: 0.2s;
+
+}
+
+.main .content .cards .card .card-image .card-overlay {
+
+	width: calc(100% - 30px);
+	background-color: var(--main-bg-color);
+	opacity: 30%;
+	transition: 0.2s;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	
+
+}
+
+.main .content .cards .card-main .card-image .card-overlay {
+
+	height: 24em;
+
+}
+
+.main .content .cards .card-minor .card-image .card-overlay {
+
+	height: 12em;
+
+}
+
+.main .content .cards .card .card-image .card-tag {
+
+	position: absolute;
+	top: 1.75em;
+	left: 2.5em;
+	z-index: 3;
+	opacity: 0;
+	transition: 0.2s;
+	padding: 0.4em .75em;
+
+}
+
+.main .content .cards .card-main .card-image .card-tag {
+
+	top: 2.5em;
+
+}
+
+.main .content .cards .card .card-body {
+
+	padding: 1.125em 0em;
+	padding-bottom: 2em;
+
+}
+
+.main .content .cards .card .card-body .card-title {
+
+	margin-bottom: 0.2em;
+	transition: 0.2s;
+	font-family: LouisGeorgeCafe;
+
+}
+
+.main .content .cards .card .card-body .card-text {
+
+	color: var(--accent-txt-color);
+
+}
+
+.main .list {
+
+	padding: 6em 0;
+	border-top: 1px solid var(--accent-bg-color);
+	border-bottom: 1px solid var(--accent-bg-color);
+	margin-bottom: 2em;
+
+}
+
+.main .list h5 {
+
+	font-family: LouisGeorgeCafe;
+	line-height: 1.6em;
+
+}
+
+.main .list .list-title {
+
+	font-family: LouisGeorgeCafeBold;
+
+}
+
+.main .list img {
+
+	width: 100%;
+	transition: 0.2s;
+
+}
+
+.main .list img:hover {
+
+	transform: scale(1.05);
+
+}
+
+.main .list a {
+
+	transition: 0.2s;
+
+}
+
+.main .list a:hover {
+
+	color: var(--main-color);
+
+}
+
+.main .content .cards .card-full-1 .card-image {
+
+	background: url("./imgs/InternetBrands_Background.jpg");
+	padding: 13em 0em;
+
+}
+
+.main .content .cards .card-full .card-image {
+
+	background-color: var(--main-txt-color);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	transition: 0.2s;
+
+}
+
+.main .content .cards .card-full .card-image .card-overlay {
+
+	background-color: var(--main-bg-color);
+	opacity: 30%;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	transition: 0.2s;
+	width: calc(100% - 30px);
+	height: calc(10em + 320px);
+
+}
+
+.main .content .cards .card-full .card-image img {
+
+	height: 4em;
+	position: relative;
+	z-index: 3;
+	transition: 0.2s;
+	
+
+
+}
+
+.main .content .cards .card-full .card-image .card-tag {
+
+	top: 3em;
+	left: 4em;
+
+}
+
+.main .list .images {
+
+	padding: 15px;
+	padding-top: 4em;
+
+}
+
+.main .list .images .image p {
+
+	color: var(--accent-txt-color);
+	padding-top: 1em;
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  
+
+  .main .title h1 {
+
+	font-size: 4.25rem;
+	
+
+}
+
+.main .title .image-circle {
+
+	
+	height: 4.25rem;
+	width: 4.25rem;
+	
+}
+
+.main .list .images {
+    
+    padding-top: 3em;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  
+
+  .main .title h1 {
+
+	font-size: 3.6rem;
+
+	
+
+}
+
+.main .title .image-circle {
+
+	
+	height: 3.6rem;
+	width: 3.6rem;
+	
+}
+
+h1 {
+	
+	font-size: 3rem;
+}
+
+.main .list .images {
+    
+    padding-top: 2em;
+
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+  
+
+  .main .title h1 {
+
+	font-size: 3rem;
+	
+}
+
+.main .title .image-circle {
+
+	
+	height: 3rem;
+	width: 3rem;
+	
+}
+
+
+}
+
+
+

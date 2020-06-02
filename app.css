@@ -156,7 +156,7 @@ a:hover {
 
 	height: 2.75em;
 	position: relative;
-	bottom: 0.35em;
+	bottom: 0.45em;
 
 }
 
@@ -215,7 +215,6 @@ a:hover {
 .footer-container .footer .footer-text {
 
 	float: right;
-	color: var(--accent-txt-color);
 	display: inline-block;
 
 }
@@ -743,16 +742,29 @@ h1 {
 
   .main .title h1 {
 
-	font-size: 3rem;
+	font-size: 2.5rem;
 	
 }
 
 .main .title .image-circle {
 
 	
-	height: 3rem;
-	width: 3rem;
+	height: 2.5rem;
+	width: 2.5rem;
 	
+}
+
+.main .content .cards .card .card-image .card-tag {
+
+	top: 2em;
+	left: 2em;
+
+}
+
+.main .content .cards .card-main .card-image .card-tag {
+
+	top: 2.5em;
+
 }
 
 

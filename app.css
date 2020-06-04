@@ -85,6 +85,7 @@ p {
 a:hover {
 
 	color: var(--main-color);
+	text-decoration: none;
 }
 
 ::selection {
@@ -375,6 +376,7 @@ a:hover {
 	top: 0.15em;
 	position: relative;
 	display: inline-block;
+	background: url("./imgs/Profile_1.jpg");
 	background-position: center;
 	background-size: cover;
 	
@@ -409,6 +411,7 @@ a:hover {
 .main .content .cards a:hover {
 
 	color: var(--main-color);
+	text-decoration: none;
 
 }
 
@@ -418,6 +421,7 @@ a:hover {
 	background-color: var(--main-bg-color);
 
 }
+
 
 .main .content .cards .card-main-container, .main .content .cards .card-minor-container {
 
@@ -579,6 +583,12 @@ a:hover {
 
 }
 
+.main .list .list-detail {
+
+	color: var(--accent-txt-color);
+
+}
+
 .main .list .list-title {
 
 	font-family: LouisGeorgeCafeBold;
@@ -674,10 +684,176 @@ a:hover {
 
 
 
+/* Company Page */
+
+.company .title h1 {
+
+
+	font-size: 5.5rem;
+	line-height: 1.2em;
+
+}
+
+.company .title {
+
+
+	padding-bottom: 8em;
+
+}
+
+.company .note {
+
+
+	border-bottom: 1px solid var(--accent-bg-color);
+	margin-bottom: 2em;
+	padding-bottom: 4em;
+
+}
+
+.company .note .detail {
+
+
+	color: var(--accent-txt-color);
+	font-family: LouisGeorgeCafe;
+
+}
+
+.company .project {
+
+
+	padding-bottom: 8em;
+
+}
+
+.company .project .project-image-container {
+
+
+	overflow: hidden;
+	padding: 0;
+
+}
+
+.company .project .project-image {
+
+
+	background-color: var(--main-color);
+	padding: 12em 0;
+	text-align: center;
+	transition: 0.2s;
+	cursor: pointer;
+
+}
+
+.company .project .project-image:hover {
+
+
+	transform: scale(1.05);
+	text-decoration: none;
+
+}
+
+.company .project .project-image-1 {
+
+	background: url("./imgs/InternetBrands_Main.jpg");
+	background-position: center;
+	background-size: cover;
+
+}
+
+.company .project .project-image-2 {
+
+	background: url("./imgs/IB_DFLive.png");
+	background-position: center;
+	background-size: cover;
+
+}
+
+.company .project .project-image-overlay {
+
+
+	padding: 12em 0;
+	background-color: var(--main-bg-color);
+	opacity: 0%;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	transition: 0.2s;
+	width: 100%;
+	height: 100%;
+
+}
+
+.company .project .project-image h4 {
+
+
+	position: relative;
+	z-index: 3;
+	opacity: 0;
+	transition: 0.2s;
+	text-decoration: none;
+	color: var(--main-txt-color);
+
+
+}
+
+
+.company .project .project-overview {
+
+
+	padding-top: 5em;
+	padding-right: 3em;
+
+}
+
+.company .project .project-overview .text {
+
+
+	font-family: LouisGeorgeCafe;
+	line-height: 1.8em;
+	color: var(--accent-txt-color);
+
+}
+
+.company .project .project-overview .status {
+
+
+	padding-top: 1em;
+
+}
+
+.company .project .project-overview .status span {
+
+
+	height: 0.5em;
+	width: 0.5em;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 0.2em;
+	position: relative;
+	bottom: 0.1em;
+
+}
+
+
+.launched {
+
+	background-color: #82c787;
+
+}
+
+.in-progress {
+
+	background-color: #75b0df;
+
+}
+
+
+
+
 @media only screen and (max-width: 992px) {
   
 
-  .main .title h1 {
+  .main .title h1, .company .title h1 {
 
 	font-size: 4.25rem;
 	
@@ -705,9 +881,9 @@ a:hover {
 @media only screen and (max-width: 768px) {
   
 
-  .main .title h1 {
+  .main .title h1, .company .title h1 {
 
-	font-size: 3.5rem;
+	font-size: 4rem;
 
 	
 
@@ -716,8 +892,8 @@ a:hover {
 .main .title .image-circle {
 
 	
-	height: 3.5rem;
-	width: 3.5rem;
+	height: 4rem;
+	width: 4rem;
 	
 }
 
@@ -732,6 +908,20 @@ h1 {
 
     }
 
+
+    .company .title {
+
+    padding-bottom: 4em;
+
+}
+
+.company .project .project-overview {
+    
+    padding-top: 2em;
+    padding-right: 0;
+
+}
+
 }
 
 
@@ -740,30 +930,52 @@ h1 {
 @media only screen and (max-width: 576px) {
   
 
-  .main .title h1 {
+.main .title h1, .company .title h1 {
 
-	font-size: 2.5rem;
+	font-size: 3rem;
+
 	
+
 }
 
 .main .title .image-circle {
 
 	
-	height: 2.5rem;
-	width: 2.5rem;
+	height: 3rem;
+	width: 3rem;
 	
 }
 
 .main .content .cards .card .card-image .card-tag {
 
 	top: 2em;
-	left: 2em;
+	left: 2.5em;
 
 }
 
 .main .content .cards .card-main .card-image .card-tag {
 
 	top: 2.5em;
+
+}
+
+.main .content .cards .card-full .card-image .card-tag {
+
+	top: 3em;
+
+}
+
+.main .content .cards .card-image-container {
+
+	margin-right: -35px;
+	margin-left: -35px;
+
+
+}
+
+.main .content .cards .card .card-image .card-overlay {
+
+	width: calc(100% + 40px) !important;
 
 }
 

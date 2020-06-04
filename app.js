@@ -90,7 +90,6 @@ $(".main .content .cards .card").mouseenter(function(){
         $(this).find(".card-image").css("transform","scale(1.05)");
         $(this).find("img").css("transform","scale(0.965)");
         $(this).find(".card-title").css("color","var(--link-color)");
-        $(this).find(".card-title").css("text-decoration","underline");
         $(this).find(".card-tag").css("opacity","1");
         $(this).find(".card-overlay").css("opacity","60%");
 
@@ -108,33 +107,56 @@ $(".main .content .cards .card").mouseenter(function(){
 		});
 
 
+
+// Effects for the IB Page 
+
+
+$(".company .project .project-image").mouseenter(function(){
+        
+    
+        $(this).find(".project-image-overlay").css("opacity","0.7");
+        $(this).find("h4").css("opacity","1");
+       
+
+    });
+
+
+ $(".company .project .project-image").mouseleave(function(){
+
+
+        $(this).find(".project-image-overlay").css("opacity","0");
+        $(this).find("h4").css("opacity","0");
+
+    });
+
+
    $(document).ready(function() {
     
     	
-   		var circle = $('.main .title .image-circle');
+  //  	var circle = $('.main .title .image-circle');
 
-		var backgrounds = new Array(
-		    'url("./imgs/Profile_1.jpg")'
-		  , 'url("./imgs/Profile_2.jpg")'
-		  , 'url("./imgs/Profile_3.jpg")'
-		  , 'url("./imgs/Profile_4.jpg")'
-		  , 'url("./imgs/Profile_5.jpg")'
-		  , 'url("./imgs/Profile_6.jpg")'
-		);
+		// var backgrounds = new Array(
+		//     'url("./imgs/Profile_1.jpg")'
+		//   , 'url("./imgs/Profile_2.jpg")'
+		//   , 'url("./imgs/Profile_3.jpg")'
+		//   , 'url("./imgs/Profile_4.jpg")'
+		//   , 'url("./imgs/Profile_5.jpg")'
+		//   , 'url("./imgs/Profile_6.jpg")'
+		// );
 
-		var current = 0;
+		// var current = 0;
 
-		function nextBackground() {
-		    current++;
-		    current = current % backgrounds.length;
-		    circle.css('background', backgrounds[current]);
-		    circle.css('background-position', 'center');
-			circle.css('background-size', 'cover');
+		// function nextBackground() {
+		//     current++;
+		//     current = current % backgrounds.length;
+		//     circle.css('background', backgrounds[current]);
+		//     circle.css('background-position', 'center');
+		// 	circle.css('background-size', 'cover');
 
-		}
-		setInterval(nextBackground, 750);
+		// }
+		// setInterval(nextBackground, 750);
 
-		circle.css('background', backgrounds[0]);
+		// circle.css('background', backgrounds[0]);
 
 
 		

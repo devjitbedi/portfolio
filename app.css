@@ -595,6 +595,16 @@ a:hover {
 
 }
 
+.main .list .list-detail span {
+
+	position: relative;
+	bottom: 0.2em;
+	left: 0.1em;
+	font-size: 0.65em;
+	background-color: var(--main-color);
+
+}
+
 .main .list img {
 
 	width: 100%;
@@ -754,7 +764,7 @@ a:hover {
 
 .company .project .project-image-1 {
 
-	background: url("./imgs/InternetBrands_Main.jpg");
+	background: url("./imgs/IB_OnlineBooking.png");
 	background-position: center;
 	background-size: cover;
 
@@ -885,7 +895,11 @@ a:hover {
 
 	font-size: 4rem;
 
-	
+}
+
+ 	.company .title h4 {
+
+	font-size: 1.4rem;
 
 }
 

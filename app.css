@@ -675,7 +675,7 @@ a:hover {
 
 }
 
-.main .list .images .image p {
+.main .list .images .image h5 {
 
 	color: var(--accent-txt-color);
 	padding-top: 1em;

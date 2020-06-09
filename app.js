@@ -107,6 +107,21 @@ $(".main .content .cards .card").mouseenter(function(){
 		});
 
 
+   $(".main .content .case-study-card-container .case-study-card").mouseenter(function(){
+        
+       $(this).find(".card-image img").css("transform","scale(1.05)");
+
+
+    });
+
+   $(".main .content .case-study-card-container .case-study-card").mouseleave(function(){
+
+        $(this).find(".card-image img").css("transform","scale(1)");
+  
+
+    });
+
+
 
 // Effects for the IB Page 
 

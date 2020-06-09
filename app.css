@@ -66,6 +66,11 @@ h1 {
 	font-size: 3.6rem;
 }
 
+h2 {
+
+	font-size: 3rem;
+}
+
 h4 {
 
 	font-size: 1.8rem;
@@ -178,6 +183,16 @@ a:hover {
 	font-size: 1.2rem;
 	transition: 0.2s;
 	color: var(--main-txt-color);
+
+}
+
+.header-container .header .action i {
+
+	display: none;
+	font-size: 1.8rem;
+	bottom: -0.1em;
+	position: relative;
+	z-index: 3;
 
 }
 
@@ -366,6 +381,7 @@ a:hover {
 
 }
 
+
 .main .title .image-circle {
 
 	background-color: var(--main-txt-color);
@@ -398,8 +414,96 @@ a:hover {
 .main .content .content-title {
 
 	padding-bottom: 1em;
+	color: var(--accent-txt-color);
+
 
 }
+
+.main .content .case-study-card-container {
+
+	padding-right: 15px;
+	padding-left: 15px;
+
+
+}
+
+
+.main .content .case-study-card-container .case-study-card {
+
+	color: var(--main-txt-color);
+	margin-bottom: 2em;
+	background-image: linear-gradient(90deg,  #1a1e21, #1b1e21);
+	transition: 0.5s;
+	position: relative;
+
+
+}
+
+.main .content .case-study-card-container .case-study-card:hover {
+
+	transform: translateY(-10px);
+	background-image: linear-gradient(90deg,  #16191c, #14181c);
+
+
+}
+
+
+.main .content .case-study-card-container .case-study-card .card-body {
+
+	padding-left: 5em;
+
+
+}
+
+.main .content .case-study-card-container .case-study-card .card-body h2 {
+
+	padding-top: 30%;
+
+
+}
+
+.main .content .case-study-card-container .case-study-card .card-body h5 {
+
+	font-family: LouisGeorgeCafe;
+
+
+}
+
+.main .content .case-study-card-container .case-study-card .card-body p {
+
+	position: absolute;
+	bottom: 1em;
+	font-family: LouisGeorgeCafeBold;
+
+
+}
+
+.main .content .case-study-card-container .case-study-card .card-body img {
+
+	height: 3em;
+	position: absolute;
+	top: 3em;
+
+
+}
+
+.main .content .case-study-card-container .case-study-card .card-image {
+
+	padding: 0;
+	overflow: hidden;
+
+
+}
+
+.main .content .case-study-card-container .case-study-card .card-image img {
+
+	width: 100%;
+	transition: 0.2s;
+
+
+}
+
+
 
 .main .content .cards a {
 
@@ -439,13 +543,13 @@ a:hover {
 
 .main .content .cards .card-main .card-image {
 
-	padding: 10em 0em;
+	padding: 12em 0em;
 
 }
 
 .main .content .cards .card-minor .card-image {
 
-	padding: 4em 0em;
+	padding: 12em 0em;
 
 }
 
@@ -512,19 +616,8 @@ a:hover {
 	position: absolute;
 	top: 0;
 	z-index: 2;
+	height: 28em;
 	
-
-}
-
-.main .content .cards .card-main .card-image .card-overlay {
-
-	height: 24em;
-
-}
-
-.main .content .cards .card-minor .card-image .card-overlay {
-
-	height: 12em;
 
 }
 
@@ -573,6 +666,19 @@ a:hover {
 	border-top: 1px solid var(--accent-bg-color);
 	border-bottom: 1px solid var(--accent-bg-color);
 	margin-bottom: 2em;
+
+}
+
+.main .list .list-row {
+
+	border-top: 1px solid var(--accent-bg-color);
+	padding: 1em 0;
+
+}
+
+.main .list .list-row p {
+
+	color: var(--accent-txt-color);
 
 }
 
@@ -633,7 +739,7 @@ a:hover {
 .main .content .cards .card-full-1 .card-image {
 
 	background: url("./imgs/InternetBrands_Background.jpg");
-	padding: 13em 0em;
+	padding: 12em 0em;
 
 }
 
@@ -884,6 +990,39 @@ a:hover {
 
     }
 
+
+
+.main .content .case-study-card-container .case-study-card .card-body {
+
+	padding-left: 2em;
+
+
+
+}
+
+.main .content .case-study-card-container .case-study-card .card-body h2 {
+
+	padding-top: 0.5em;
+	font-size: 2rem;
+
+
+}
+
+
+.main .content .case-study-card-container .case-study-card .card-body p {
+
+	display: none;
+
+}
+
+.main .content .case-study-card-container .case-study-card .card-body img {
+
+	display: none;
+
+
+}
+
+
 }
 
 
@@ -935,6 +1074,9 @@ h1 {
     padding-right: 0;
 
 }
+
+
+
 
 }
 
@@ -993,7 +1135,30 @@ h1 {
 
 }
 
+.main .content .cards .card .card-body {
+    
+    display: none;
+
+}
+
+.header-container .header .action i {
+
+	display: inline-block;
+	background-color: var(--accent-txt-color);
+	padding: 0.5em;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	top: none;
+
+}
+
+.mobile-hidden {
+
+	display: none;
 
 }
 
 
+}

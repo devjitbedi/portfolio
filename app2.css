@@ -291,11 +291,7 @@ a:hover {
 
 }
 
-.intro-section  {
 
-	padding: 5em 0;
-
-}
 
 .section-content a {
 
@@ -320,11 +316,21 @@ a:hover {
 	
 }
 
+.intro-section  {
+
+	padding: 5em 0;
+
+}
 
 .intro-section .section-content {
 
 	padding: 3em 1em;
 	text-align: center;
+}
+
+.intro-section .section-content h1 {
+
+	white-space: nowrap;
 }
 
 .intro-section .section-image {
@@ -531,6 +537,13 @@ a:hover {
 
 }
 
+.skills-section {
+
+	padding-bottom: 0;
+
+
+}
+
 .skills-section .section-content {
 
 	padding-bottom: 3em;
@@ -585,12 +598,12 @@ h1 {
 
 h1 {
 
-	font-size: 3rem;
+	font-size: 2.8rem;
 }
 
 h2 {
 
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 h3 {

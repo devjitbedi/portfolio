@@ -648,6 +648,12 @@ h5 {
 
 }
 
+ .featured-section .section-content {
+
+	padding-top: 3em;
+
+}
+
 .text-section .section-image img {
 
 	width: 100%;

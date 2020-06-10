@@ -111,6 +111,7 @@ a {
 	font-size: 1.2rem;
 }
 
+
 a:hover {
 
 	color: var(--main-color);
@@ -301,7 +302,7 @@ a:hover {
 
 	background-color: var(--main-color);
 	border-radius: 2em;
-	padding: 0.5em 1em;
+	padding: 0.55em 1.4em;
 	margin-top: 1.5em;
 	display: inline-block;
 	color: var(--main-bg-color);
@@ -311,6 +312,15 @@ a:hover {
 .section-content a:hover {
 
 	background-color: var(--main-color-dark);
+}
+
+
+.section-content a i {
+
+	font-size: 0.9rem;
+	margin-left: 0.4em;
+	position: relative;
+	
 }
 
 .section-content h6 {
@@ -451,6 +461,12 @@ a:hover {
 
 }
 
+.project-section .section-content a i {
+
+	bottom: 0.095em;
+
+}
+
 .project-section .section-content .content {
 
 	background-color: var(--accent-bg-color);
@@ -479,6 +495,12 @@ a:hover {
 
 	padding-top: 3em;
 	text-align: center;
+
+}
+
+.text-section .section-content a i {
+
+	bottom: 0.08em;
 
 }
 

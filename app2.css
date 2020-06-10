@@ -231,6 +231,7 @@ a:hover {
 
 	padding: 1em 1em;
 	position: relative;
+	padding-top: 1.5em;
 
 }
 
@@ -315,6 +316,7 @@ a:hover {
 	color: var(--main-color);
 	
 }
+
 
 .intro-section  {
 
@@ -465,27 +467,36 @@ a:hover {
 
 .text-section {
 
-	background-color: var(--accent-bg-color);
-	padding: 5em 0;
+	padding-top: 5em;
 
 }
 
 
 .text-section .section-content {
 
-	padding: 3em 0;
+	padding-top: 3em;
+	text-align: center;
 
 }
 
 .text-section .section-content h5 {
 
-	width: 70%;
 	line-height: 1.8em;
 	padding-top: 1em;
 
 }
 
+.text-section .section-image {
 
+	padding-top: 3em;
+
+}
+
+.text-section .section-image img {
+
+	width: 60%;
+
+}
 
 
 
@@ -566,8 +577,7 @@ a:hover {
 
 .text-section {
 
-	padding: 2em 0;
-	text-align: center;
+	padding-top: 2em;
 
 }
 
@@ -626,6 +636,12 @@ h5 {
   .intro-section .section-image {
 
 	display: none;
+
+}
+
+.text-section .section-image img {
+
+	width: 100%;
 
 }
 

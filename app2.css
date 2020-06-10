@@ -56,16 +56,18 @@ body {
 }
 
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
 
 	font-family: LouisGeorgeCafeBold;
 	line-height: 1.2em;
+	letter-spacing: -0.025em;
 
 }
 
 h1 {
 
 	font-size: 4.6rem;
+	
 }
 
 h2 {
@@ -83,6 +85,7 @@ h4 {
 
 	font-size: 2rem;
 	line-height: 1.4em;
+	font-family: LouisGeorgeCafeBold;
 }
 
 h5 {

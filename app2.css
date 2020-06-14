@@ -407,6 +407,11 @@ a:hover {
 	padding-top: 4em;
 }
 
+.case-study-section .section-content .main p {
+
+	color: var(--accent-txt-color);
+}
+
 
 .case-study-section .section-content a {
 
@@ -419,7 +424,7 @@ a:hover {
 
 .case-study-section .section-content a i {
 
-	background-color: var(--main-bg-color);
+/*	background-color: var(--main-bg-color);*/
 	padding: 0;
 	margin: 0;
 	color: var(--main-color);
@@ -758,7 +763,42 @@ h1 {
 
 .case-study-section .section-content .content {
 
-	padding-top: 2em;
+	padding-top: 0;
+
+}
+
+.case-study-section .section-content .main p {
+
+	display: inline-block;
+
+}
+
+.case-study-section .section-content .main a {
+
+	display: inline-block;
+	float: right;
+	text-align: right;
+	background-color: var(--main-color);
+	padding: 0.5em 0.5em;
+	position: absolute;
+	top: 0.5em;
+	right: 1em;
+
+}
+
+.case-study-section .section-content .main a i {
+
+	color: var(--main-bg-color);
+	background-color: none;
+	font-size: 1.3rem;
+	position: relative;
+	top: 0.1em;
+
+}
+
+.case-study-section .section-content .main span {
+
+	display: none;
 
 }
 
@@ -813,10 +853,10 @@ h5 {
 	font-size: 1.4rem;
 }
 
-.section-content a {
+/*.section-content a {
 
 	width: 50%;
-}
+}*/
 
 
   .intro-section .section-image {

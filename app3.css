@@ -342,7 +342,6 @@ a:hover {
 .intro-section .section-content {
 
 	padding: 3em 1em;
-	text-align: center;
 }
 
 .intro-section .section-content h1 {
@@ -367,11 +366,11 @@ a:hover {
 .intro-section .section-content .current-tag {
 
 	line-height: 1.8em;
-	border: 1px solid var(--accent-bg-color);
-	display: inline-block;
-	margin-top: 2em;
-	padding: 0.5em 1em;
-	border-radius: 0.25em;
+	border-bottom: 1px solid var(--accent-bg-color);
+	display: block;
+	margin-top: 6em;
+	padding: 0.5em 0em;
+
 }
 
 .intro-section .section-content .current-tag span {
@@ -391,6 +390,7 @@ a:hover {
 	padding: 0;
 	margin: 0;
 	color: var(--main-txt-color);
+	font-family: LouisGeorgeCafeBold;
 }
 
 .intro-section .section-content a:hover {
@@ -765,6 +765,12 @@ h1 {
 	font-size: 3.5rem;
 }
 
+
+.intro-section .section-content {
+
+	padding: 3em 0;
+}
+
 .case-study-section .section-content a {
 
 	padding-top: 0;
@@ -800,6 +806,8 @@ h1 {
 
 	display: none;
 }
+
+
 
 /*.case-study-section .section-content .main a {
 
@@ -928,7 +936,7 @@ h5 {
 
 .intro-section .section-content .current-tag {
 
-	display: none;
+	margin-top: 2em;
 }
 
 

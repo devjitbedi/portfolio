@@ -407,6 +407,8 @@ a:hover {
 	padding-top: 4em;
 }
 
+
+
 .case-study-section .section-content .main p {
 
 	color: var(--accent-txt-color);
@@ -767,6 +769,12 @@ h1 {
 
 }
 
+.case-study-section .section-content .main h4 {
+
+	margin: 0;
+
+}
+
 .case-study-section .section-content .main p {
 
 	display: inline-block;
@@ -816,6 +824,14 @@ h1 {
 .skill-section .section-content {
 
 	padding-bottom: 2em;
+}
+
+.skill-section .section-content p {
+
+	display: inline-block;
+	border: 1px solid var(--accent-txt-color);
+	padding: 0.25em 0.5em;
+	border-radius: 0.25em;
 }
 
 .timeline-section .section-content h4 {

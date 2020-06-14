@@ -4,11 +4,11 @@
 :root {
 
   --main-bg-color: #FFFFFF;
-  --accent-bg-color: #FAFAFA;
+  --accent-bg-color: #dadde3;
   --main-txt-color: #111111;
   --main-color: #5ba8f5;
   --main-color-dark: #498dd1;
-  --accent-txt-color: #d2d7df;
+  --accent-txt-color: #a7acb8;
   --header-footer-bg-color: #FFFFFF;
 
 }
@@ -103,6 +103,8 @@ p {
 
 	font-size: 1.2rem;
 	position: relative;
+	letter-spacing: -0.015em;
+
 }
 
 a {
@@ -365,7 +367,7 @@ a:hover {
 .intro-section .section-content .current-tag {
 
 	line-height: 1.8em;
-	border: 1px solid var(--accent-txt-color);
+	border: 1px solid var(--accent-bg-color);
 	display: inline-block;
 	margin-top: 2em;
 	padding: 0.5em 1em;
@@ -414,6 +416,11 @@ a:hover {
 	color: var(--accent-txt-color);
 }
 
+.case-study-section .section-content .content p {
+
+	line-height: 1.8em;
+}
+
 
 .case-study-section .section-content a {
 
@@ -455,8 +462,8 @@ a:hover {
 
 	padding-top: 8em;
 	padding-bottom: 8em;
-	border-top: 1px solid var(--accent-txt-color);
-	border-bottom: 1px solid var(--accent-txt-color);
+	border-top: 1px solid var(--accent-bg-color);
+	border-bottom: 1px solid var(--accent-bg-color);
 }
 
 .skill-section .section-content p {
@@ -466,7 +473,7 @@ a:hover {
 
 .timeline-section .section-content .content-row {
 
-	border-bottom: 1px solid var(--accent-txt-color);
+	border-bottom: 1px solid var(--accent-bg-color);
 	padding-bottom: 1em;
 }
 
@@ -875,6 +882,12 @@ h5 {
 	width: 50%;
 }*/
 
+  .intro-section  {
+
+	padding: 1em;
+
+}
+
 
   .intro-section .section-image {
 
@@ -896,6 +909,17 @@ h5 {
 
 	padding-top: 2em;
 
+}
+
+.case-study-section .section-content .main {
+
+	padding-bottom: 0.5em;
+}
+
+.skill-section .skill-container, .timeline-section .timeline-container {
+
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 

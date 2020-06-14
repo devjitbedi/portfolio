@@ -4,7 +4,7 @@
 :root {
 
   --main-bg-color: #FFFFFF;
-  --accent-bg-color: #dadde3;
+  --accent-bg-color: #f2f3f5;
   --main-txt-color: #111111;
   --main-color: #5ba8f5;
   --main-color-dark: #498dd1;
@@ -101,7 +101,7 @@ h6 {
 
 p {
 
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	position: relative;
 	letter-spacing: -0.015em;
 
@@ -110,7 +110,7 @@ p {
 a {
 
 	color: var(--main-txt-color);
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 
 
@@ -834,13 +834,21 @@ h1 {
 	padding-bottom: 2em;
 }
 
+.skill-section .section-content h5 {
+
+	padding-bottom: 0.25em;
+
+}
+
 .skill-section .section-content p {
 
 	display: inline-block;
-	border: 1px solid var(--accent-txt-color);
+	background-color: var(--accent-bg-color);
+	color: var(--accent-txt-color);
 	padding: 0.25em 0.5em;
 	border-radius: 0.25em;
 }
+
 
 .timeline-section .section-content h4 {
 

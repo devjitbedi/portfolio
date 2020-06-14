@@ -455,7 +455,7 @@ a:hover {
 
 	padding-top: 8em;
 	padding-bottom: 8em;
-	border-top: 1px solid var(--accent-txt-color);
+	border-top: 1px solid var(--accent-bg-color);
 	border-bottom: 1px solid var(--accent-txt-color);
 }
 

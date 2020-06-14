@@ -786,7 +786,7 @@ h1 {
 .case-study-section .section-content .main h4, .timeline-section .section-content h4, .skill-section .section-content h4 {
 
 	margin: 0;
-	font-size: 2.4rem;
+	font-size: 2.2rem;
 
 }
 
@@ -920,10 +920,7 @@ h5 {
 	display: none;
 }
 
-.case-study-section {
 
-	padding-bottom: 2em;
-}
 
 
 

@@ -782,7 +782,7 @@ h1 {
 
 }
 
-.case-study-section .section-content .main a {
+/*.case-study-section .section-content .main a {
 
 	display: inline-block;
 	float: right;
@@ -809,7 +809,7 @@ h1 {
 
 	display: none;
 
-}
+}*/
 
 .skill-section, .case-study-section {
 
@@ -867,7 +867,7 @@ h3 {
 
 h5 {
 
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 /*.section-content a {

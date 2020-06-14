@@ -251,7 +251,7 @@ a:hover {
 
 	display: inline-block;
 	float: right;
-	padding-top: 0.5em;
+	padding-top: 0.3em;
 
 }
 
@@ -771,15 +771,22 @@ h1 {
 
 }
 
+.case-study-section .section-content {
+
+	padding-top: 2em;
+
+}
+
 .case-study-section .section-content .content {
 
 	padding-top: 0;
 
 }
 
-.case-study-section .section-content .main h4 {
+.case-study-section .section-content .main h4, .timeline-section .section-content h4, .skill-section .section-content h4 {
 
 	margin: 0;
+	font-size: 2.4rem;
 
 }
 
@@ -787,6 +794,11 @@ h1 {
 
 	display: inline-block;
 
+}
+
+.case-study-section .section-content .content p {
+
+	display: none;
 }
 
 /*.case-study-section .section-content .main a {
@@ -882,7 +894,7 @@ h3 {
 
 h5 {
 
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 }
 
 /*.section-content a {
@@ -913,11 +925,7 @@ h5 {
 	padding-bottom: 2em;
 }
 
-.case-study-section .section-content {
 
-	padding-top: 2em;
-
-}
 
 .case-study-section .section-content .main {
 

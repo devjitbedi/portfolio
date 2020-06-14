@@ -867,6 +867,17 @@ h1 {
 	padding-bottom: 1em;
 }
 
+.timeline-section .section-content p {
+    
+    color: var(--accent-txt-color);
+}
+
+.timeline-section .section-content h5 {
+     display: block; 
+     float: none; 
+    top: 0;
+}
+
 
 
 

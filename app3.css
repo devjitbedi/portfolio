@@ -188,11 +188,7 @@ a:hover {
 
 }
 
-@keyframes rotate {
 
-	100% {-webkit-transform: rotate(-25deg) translateX(-0.05em) translateY(-0.01em); }
-
-}
 
 
 

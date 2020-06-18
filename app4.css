@@ -1,0 +1,414 @@
+/* Variables */
+
+:root {
+
+  --main-txt-color: #111111;
+  --accent-txt-color: #a7acb8;
+  --main-bg-color: #FFFFFF;
+  --accent-bg-color: #f2f3f5;
+  --main-color: #5ba8f5;
+  --main-color-dark: #498dd1;
+  --box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+
+}
+
+
+/* Inputting Fonts */
+
+@font-face {
+
+  font-family: NexaBold;
+  src: url("./fonts/Nexa-Bold.ttf");
+
+}
+
+@font-face {
+
+  font-family: Nexa;
+  src: url("./fonts/Nexa-Light.ttf");
+
+}
+
+
+
+/* General CSS */
+
+
+.container-fluid {
+
+  padding: 0;
+
+}
+
+body {
+
+  font-family: Nexa;
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+
+}
+
+h2, h4 { 
+
+  font-family: NexaBold;
+
+ }
+
+h2 {
+
+  font-size: 3rem;
+}
+
+
+h4 {
+
+  font-size: 2rem;
+}
+
+h5 {
+
+  font-size: 1.4rem;
+}
+
+a {
+
+  font-size: 1.2rem;
+}
+
+.rotate {
+
+  animation: rotate 1.5s forwards;
+  animation-timing-function: cubic-bezier(0, .428, .046, .989);
+  animation-delay: 0.75s;
+  position: relative;
+  display: inline-block;
+
+}
+
+@keyframes rotate {
+
+  100% {-webkit-transform: rotate(-25deg) translateX(-0.04em) translateY(-0.01em); }
+
+}
+
+
+
+/* Home Page */
+
+
+.header-container .header {
+
+  padding-top: 2em;
+  position: fixed;
+  z-index: 5;
+  color: var(--main-bg-color);
+
+
+}
+
+.header-container .header h4 {
+
+  display: inline-block;
+
+}
+
+.header-container .header .feather {
+
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 0;
+  fill: var(--main-bg-color);
+  float: right;
+
+}
+
+.preview-wrapper {
+
+  display: flex;
+  overflow-x: scroll;
+  vertical-align: top;
+  scroll-snap-type: x mandatory;
+
+}
+
+.preview-wrapper::-webkit-scrollbar {   
+
+  display: none;
+
+}
+
+.preview-df {
+
+   background: url("./imgs/Preview_DF.jpg");
+}
+
+.preview-olb {
+
+   background: url("./imgs/Preview_OLB.jpg");
+}
+
+.preview-kps {
+
+   background: url("./imgs/Preview_KPS.jpg");
+}
+
+.preview-bu {
+
+   background: url("./imgs/Preview_BU.jpg");
+}
+
+.preview-container {
+
+    background-position: center;
+    background-size: cover;
+    flex: 0 0 106%;
+    cursor: move;
+    cursor: grab;
+    scroll-snap-align: start;
+    position: relative;
+    
+}
+
+.preview-container:last-child {
+
+    flex: 0 0 100%;
+ 
+}
+
+.preview-overlay {
+
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+  position: absolute;
+
+}
+
+.preview-container .preview {
+
+  height: 100vh;
+
+}
+
+.preview-container .preview .preview-content {
+
+  position: absolute;
+  bottom: 5em;
+  color: var(--main-bg-color);
+
+}
+
+.preview-container .preview .preview-content h6 {
+
+ font-family: NexaBold;
+ padding-bottom: 1em;
+
+}
+
+.preview-container .preview .preview-content h6 .feather {
+
+  width: 1.4em;
+  height: 1.4em;
+  stroke-width: 3;
+  position: relative;
+  stroke: var(--main-bg-color);
+  bottom: 0.135em;
+  padding-right: 0.35em;
+  padding-left: 0.1em;
+
+}
+
+.preview-container .preview .preview-content h2 {
+
+  padding-bottom: 0.2em;
+
+}
+
+.preview-container .preview .preview-content h5 {
+
+  padding-bottom: 2em;
+
+}
+
+
+.preview-container .preview .preview-content a {
+
+  color: var(--main-bg-color);
+  font-family: NexaBold;
+
+
+}
+
+.preview-container .preview .preview-content a:hover {
+
+  color: var(--main-bg-color);
+  text-decoration: none;
+  transition: 0.2s;
+
+}
+
+.preview-container .preview .preview-content a .feather {
+
+  width: 3em;
+  height: 3em;
+  stroke-width: 2.5;
+  position: relative;
+  bottom: 0.09em;
+  margin-right: 0.5em;
+  stroke: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+  padding: 0.75em;
+  border-radius: 50%;
+  transition: 0.2s;
+  mix-blend-mode: screen;
+
+}
+
+.preview-container .preview .preview-content a .feather:hover {
+
+  transform: scale(1.1);
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+  h2 {
+
+    font-size: 2.2rem;
+  }
+
+  h5 {
+
+    font-size: 1.2rem;
+  }
+
+  a {
+
+
+  }
+
+
+  .preview-container {
+
+    margin-top: 5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    border-radius: 0;
+    flex: 0 0 90%;
+    scroll-snap-align: center;
+
+  }
+
+  .preview-container:first-child {
+
+    margin-left: 1em;
+ 
+}
+
+  .preview-container:last-child {
+
+    flex: 0 0 93.5%;
+    border-right: 1em solid white;
+ 
+}
+
+  .preview-overlay {
+    
+    display: none;
+
+  }
+
+  .preview-container .preview {
+
+    height: calc(100vh - 6em);
+    position: relative;
+    text-align: center;
+
+}
+
+  .preview-container .preview::before {
+
+    content:"";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%);
+
+}
+
+.preview-container .preview .preview-content {
+
+   bottom: 3em;
+
+
+}
+
+.preview-container .preview .preview-content h6 {
+
+   background-color: var(--main-bg-color);
+   padding: 0.5em 1em;
+   display: inline-block;
+   color: var(--main-txt-color);
+   border-radius: 2em;
+   padding-bottom: 0.4em;
+   position: relative;
+   top: -35vh;
+   box-shadow: var(--box-shadow);
+
+
+}
+
+.preview-container .preview .preview-content h6 .feather {
+
+    stroke: var(--main-txt-color);
+    padding-left: 0;
+    bottom: 0.11em;
+
+}
+
+
+  .header-container .header {
+
+    color: var(--main-txt-color);
+  
+  }
+
+  .header-container .header h4 {
+
+    font-size: 1.5rem;
+
+  }
+
+  .header-container .header .feather {
+
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--main-txt-color);
+
+}
+
+
+}
+
+
+
+
+
+
+
+

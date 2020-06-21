@@ -337,8 +337,6 @@ a {
   .preview-container .preview {
 
     position: relative;
-    padding-left: 2em;
-    padding-right: 2em;
     border-radius: 5px;
 
 
@@ -361,6 +359,8 @@ a {
 .preview-container .preview .preview-content {
 
    bottom: 2em;
+   padding-left: 2em;
+   padding-right: 2em;
 
 
 }

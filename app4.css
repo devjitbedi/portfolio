@@ -394,6 +394,8 @@ a {
   .header-container .header {
 
     color: var(--main-txt-color);
+    padding-right: 1.5em;
+    padding-left: 1.5em;
   
   }
 

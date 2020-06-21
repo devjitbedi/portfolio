@@ -112,6 +112,12 @@ a {
 
 }
 
+.header-container .header a {
+
+  color: var(--main-bg-color);
+
+}
+
 .header-container .header h4 {
 
   display: inline-block;
@@ -266,7 +272,6 @@ a {
   padding: 0.75em;
   border-radius: 50%;
   transition: 0.2s;
-  mix-blend-mode: screen;
 
 }
 
@@ -293,12 +298,6 @@ a {
 
     font-size: 1.2rem;
   }
-
-  a {
-
-
-  }
-
 
   .preview-container {
 
@@ -332,7 +331,7 @@ a {
 
   .preview-container .preview {
 
-    height: calc(100vh - 6em);
+    height: 85vh;
     position: relative;
     text-align: center;
 
@@ -353,8 +352,14 @@ a {
 
 .preview-container .preview .preview-content {
 
-   bottom: 3em;
+   top: 3em;
 
+
+}
+
+.preview-container .preview .preview-content h2 {
+
+   padding-top: 35vh;
 
 }
 
@@ -367,9 +372,7 @@ a {
    border-radius: 2em;
    padding-bottom: 0.4em;
    position: relative;
-   top: -35vh;
    box-shadow: var(--box-shadow);
-
 
 }
 
@@ -381,11 +384,16 @@ a {
 
 }
 
-
   .header-container .header {
 
     color: var(--main-txt-color);
   
+  }
+
+  .header-container .header a {
+
+    color: var(--main-txt-color);
+
   }
 
   .header-container .header h4 {

@@ -1,8 +1,8 @@
 
 
-// Initiating Rellax
+// // Initiating Rellax
 
-var rellax = new Rellax('.rellax');
+// var rellax = new Rellax('.rellax');
 
 // Effects for Menu
 

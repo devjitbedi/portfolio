@@ -299,7 +299,7 @@ a {
   .preview-wrapper {
 
 
-    height: calc(100% - 1em);
+    padding-bottom: 1em;
 
   }
 
@@ -311,6 +311,7 @@ a {
     border-radius: 0;
     flex: 0 0 90%;
     scroll-snap-align: center;
+    border-radius: 5px;
 
   }
 
@@ -337,6 +338,7 @@ a {
 
     position: relative;
     padding-left: 2em;
+    border-radius: 5px;
 
 
 }
@@ -351,6 +353,7 @@ a {
     left: 0;
     width: 100%;
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%);
+    border-radius: 5px;
 
 }
 

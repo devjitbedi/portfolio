@@ -289,7 +289,7 @@ a {
 
   h2 {
 
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   h5 {
@@ -307,8 +307,8 @@ a {
   .preview-container {
 
     margin-top: 5.5em;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+    margin-right: 0.25em;
+    margin-left: 0.25em;
     border-radius: 0;
     flex: 0 0 90%;
     scroll-snap-align: center;
@@ -360,38 +360,33 @@ a {
 .preview-container .preview .preview-content {
 
    bottom: 2em;
-   padding-left: 2em;
-   padding-right: 2em;
+   padding-left: 1.5em;
+   padding-right: 1.5em;
 
 
 }
-/*
-.preview-container .preview .preview-content h2 {
 
-   padding-top: 32.5vh;
 
-}*/
+.preview-container .preview .preview-content h6 {
 
-/*.preview-container .preview .preview-content h6 {
+   display: none;
 
-   background-color: var(--main-bg-color);
-   padding: 0.5em 1em;
-   display: inline-block;
-   color: var(--main-txt-color);
-   border-radius: 2em;
-   padding-bottom: 0.4em;
-   position: relative;
-   box-shadow: var(--box-shadow);
+}
 
-}*/
+.preview-container .preview .preview-content h5 {
 
-/*.preview-container .preview .preview-content h6 .feather {
+   padding-bottom: 1.5em;
 
-    stroke: var(--main-txt-color);
-    padding-left: 0;
-    bottom: 0.11em;
+}
 
-}*/
+.preview-container .preview .preview-content a .feather {
+
+  width: 2em;
+  height: 2em;
+  padding: 0.45em;
+
+}
+
 
   .header-container .header {
 

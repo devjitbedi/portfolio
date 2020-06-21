@@ -43,14 +43,16 @@
 .container-fluid {
 
   padding: 0;
+  height: 100%;
 
 }
 
-body {
+body, html {
 
   font-family: Nexa;
   color: var(--main-txt-color);
   background-color: var(--main-bg-color);
+  height: 100%;
 
 }
 
@@ -140,7 +142,7 @@ a {
   overflow-x: scroll;
   vertical-align: top;
   scroll-snap-type: x mandatory;
-  height: 100vh;
+  height: 100%;
 
 }
 
@@ -297,13 +299,13 @@ a {
   .preview-wrapper {
 
 
-    height: calc(100vh - 1em);
+    height: calc(100% - 1em);
 
   }
 
   .preview-container {
 
-    margin-top: 5em;
+    margin-top: 5.5em;
     margin-right: 0.5em;
     margin-left: 0.5em;
     border-radius: 0;
@@ -334,7 +336,8 @@ a {
   .preview-container .preview {
 
     position: relative;
-    text-align: center;
+    padding-left: 2em;
+
 
 }
 
@@ -347,24 +350,24 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%);
 
 }
 
 .preview-container .preview .preview-content {
 
-   top: 3em;
+   bottom: 2em;
 
 
 }
-
+/*
 .preview-container .preview .preview-content h2 {
 
    padding-top: 32.5vh;
 
-}
+}*/
 
-.preview-container .preview .preview-content h6 {
+/*.preview-container .preview .preview-content h6 {
 
    background-color: var(--main-bg-color);
    padding: 0.5em 1em;
@@ -375,15 +378,15 @@ a {
    position: relative;
    box-shadow: var(--box-shadow);
 
-}
+}*/
 
-.preview-container .preview .preview-content h6 .feather {
+/*.preview-container .preview .preview-content h6 .feather {
 
     stroke: var(--main-txt-color);
     padding-left: 0;
     bottom: 0.11em;
 
-}
+}*/
 
   .header-container .header {
 

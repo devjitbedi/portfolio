@@ -1,12 +1,14 @@
-$(document).ready(function() {
 
 
-  setTimeout(function() { 
+$(window).on("load", function () {
 
-    $(".loading-container").slideToggle("250", "swing"); 
+    setTimeout(function() { 
+
+      $(".loading-container").slideToggle("250", "swing"); 
 
 
-  }, 1600);
+    }, 1600);
 
 
-});
+
+   }); 

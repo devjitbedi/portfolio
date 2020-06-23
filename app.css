@@ -190,7 +190,7 @@ a {
   top: 0;
   z-index: 10;
   text-align: center;
-  padding-top: 25vh;
+  padding-top: 20vh;
   color: var(--main-txt-color);
 
 }
@@ -202,13 +202,15 @@ a {
   
 }
 
-.loading-container .loader {
+.loading-container p {
 
-  width: 5em;
-  height: 0.1em;
-  background-color: red;
+  opacity: 0;
+  transition: 0.4s;
+  font-family: NexaBold;
+  color: #dce2e6;
   
 }
+
 
 
 

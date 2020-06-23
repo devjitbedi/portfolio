@@ -7,14 +7,14 @@ $( document ).ready(function() {
     $(".loading-container p").css("opacity", "1");
 
 
-  }, 3000);
+  }, 3500);
 
   setTimeout(function() { 
 
     $(".loading-container p").css("opacity", "0");
 
 
-  }, 5000);
+  }, 5500);
 
 });
 
